@@ -1,6 +1,8 @@
+##
 ### MyTeacher
+##
 
-## Pré-Requisitos.
+### Pré-Requisitos.
 
 React.js, Node.js, Python.
 
@@ -11,7 +13,7 @@ React.js, Node.js, Python.
 - Site: https://pt-br.reactjs.org/
 
 
-## Ferramentas do programador.
+### Ferramentas do programador.
 
 **Visual Studio Code**
 - Site: https://code.visualstudio.com/download
