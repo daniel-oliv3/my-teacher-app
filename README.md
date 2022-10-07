@@ -2,13 +2,45 @@
 
 ## Pré-Requisitos.
 
-React.js, Python.
+React.js, Node.js, Python.
+
+**Node.js**
+- Site: https://nodejs.org/en/
 
 **React.js**
 - Site: https://pt-br.reactjs.org/
 
 
 ## Ferramentas do programador.
+
+**Visual Studio Code**
+- Site: https://code.visualstudio.com/download
+
+
+##
+### Front-End
+##
+
+**Criação do Projeto**.
+
+- Criação da pasta frontend.
+- Habilitar a execução de scripts no Windows.
+- Prompt de comando, globalmente.
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+**Criar o projeto**.
+```    
+npx create-next-app . --ts
+``` 
+
+**Iniciar o servidor**
+```
+npm run dev
+```
+
+
 
 
 
