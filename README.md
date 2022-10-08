@@ -18,6 +18,10 @@ React.js, Node.js, Python.
 **Visual Studio Code**
 - Site: https://code.visualstudio.com/download
 
+**Extenção VsCode**
+- Visual Studio Code
+    - `vscode-styled-components`
+
 
 ##
 ### Front-End
@@ -51,14 +55,6 @@ npm i @mui/material@5.10.2 @emotion/react@11.10.0 @emotion/styled@11.10.0
 - Criação da pasta `src` na raiz do projeto.
 - Criação da pasta `components` em `src`.
 - Criação do componente *Cabecalho*.
-
-
-**Extenção VsCode**
-- Visual Studio Code
-    - `vscode-styled-components`
-
-
-
 - Criação da pasta `Cabecalho` em `components`.
 - Criação do arquivo `Cabecalho.style.tsx`.
 
