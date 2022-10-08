@@ -4,9 +4,12 @@ import { styled } from "@mui/material";
 
 
 export const CabecalhoContainer = styled('header')`
-    color: red;
+    width: 230px;
 `;
 
+export const Logo = styled('img')`
+    width: 100%;
+`;
 
 
 

@@ -58,8 +58,9 @@ npm i @mui/material@5.10.2 @emotion/react@11.10.0 @emotion/styled@11.10.0
     - `vscode-styled-components`
 
 
+
 - Criação da pasta `Cabecalho` em `components`.
-- Criação do arquivo *Cabecalho.style.tsx*.
+- Criação do arquivo `Cabecalho.style.tsx`.
 
 **Configurando o Tema**
 
