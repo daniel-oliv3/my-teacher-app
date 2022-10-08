@@ -42,7 +42,12 @@ npx create-next-app . --ts
 npm run dev
 ```
 
+### Material UI
+- Site: https://mui.com/pt/
 
+```
+npm i @mui/material@5.10.2 @emotion/react@11.10.0 @emotion/styled@11.10.0
+```
 
 
 
