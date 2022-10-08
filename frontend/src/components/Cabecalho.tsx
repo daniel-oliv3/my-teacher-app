@@ -1,5 +1,10 @@
+
+
+
 const Cabecalho = () => {
-    return  <div>Cabeçalho</div>
+    return  (
+        <div>Cabeçalho</div>
+    )
 }
 
 export default Cabecalho;
