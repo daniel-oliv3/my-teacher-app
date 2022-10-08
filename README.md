@@ -180,7 +180,8 @@ python manage.py runserver
 ```        
 npm install -g npm@latest --force
 ```      
-    - Limpe o cache com o comando:
+
+- Limpe o cache com o comando:
 
 ```        
 npm cache clean --force
