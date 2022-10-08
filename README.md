@@ -58,14 +58,64 @@ npm i @mui/material@5.10.2 @emotion/react@11.10.0 @emotion/styled@11.10.0
     - `vscode-styled-components`
 
 
+- Criação da pasta `Cabecalho` em `components`.
+- Criação do arquivo *Cabecalho.style.tsx*.
+
+**Configurando o Tema**
+
+- Criar uma pasta chamada `themes` dentro de `src`.
+- Criar o arquivo chamado `theme.ts` com o seguinte conteúdo.
 
 
+```tsx
+import { createTheme } from '@mui/material';
 
+const tema = createTheme({
+    palette: {
+        primary: {
+            main: '#F52273',
+        },
+        secondary: {
+            main: '#F5F5F5',
+        },
+        text: {
+            primary: '#F52273',
+            secondary: '#6c6767',
+        },
+    },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    color: '#FFF',
+                    borderRadius: '0',
+                    backgroundColor: '#F52273',
+                    textTransform: 'none',
+                    fontWeight: 'bold',
+                    paddingTop: '12px',
+                    paddingBottom: '12px',
+                    ":hover": {
+                        backgroundColor: '#F52273',
+                    }
 
+                },
+            },
+        },
+        MuiTextField: {
+            defaultProps: {
+                InputLabelProps: {
+                    required: false,
+                },
+                required: true,
+            },
+        },
+    },
+});
 
+export default tema;
+```
 
-
-
+- Definir o tema em `_app.tsx`.
 
 
 
