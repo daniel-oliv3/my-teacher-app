@@ -187,7 +187,7 @@ npm install -g npm@latest --force
 npm cache clean --force
 ```
         
-    - Feche o terminal e abra novamente
+- Feche o terminal e abra novamente
 - Ao executar a criação do projeto recebe a mensagem: `O termo ‘npm’ não é reconhecido como nome de cmdlet…`
     - Certifique que baixou o nome e instalou corretamente, você pode baixar o node nesse link [https://nodejs.org/dist/v16.17.1/node-v16.17.1-x86.msi](https://nodejs.org/dist/v16.17.1/node-v16.17.1-x86.msi)
     - Fecha e abre o Visual Studio Code para ter certeza que o terminal está reconhecendo o comando após instalar o node.
