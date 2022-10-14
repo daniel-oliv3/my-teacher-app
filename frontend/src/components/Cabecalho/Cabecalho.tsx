@@ -1,7 +1,5 @@
 import { CabecalhoContainer, Logo } from "./Cabecalho.style";
 
-
-
 const Cabecalho = () => {
     return  (
         <CabecalhoContainer >
