@@ -232,6 +232,39 @@ npm i axios "@mui/material"
 ### Back-End
 ##
 
+**Python**
+- Site: https://www.python.org/downloads/
+
+**Insomnia**
+- Site: https://insomnia.rest/download
+
+
+##
+
+- Instalar o python.
+- Verificar a versão instalada do python(Prompt de comando(console) globalmente).
+```
+python -- version
+```
+
+**Criar o projeto**.
+- Criar a pasta do projeto `backend`.
+- Criar e ativar a `virtualenv`.
+
+**Django**
+- Site: https://www.djangoproject.com/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
