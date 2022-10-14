@@ -10,6 +10,11 @@ export const ListaStyled = styled('ul')`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: ${({theme}) => theme.spacing(9)};
+
+    ${({theme}) => theme.breakpoints.down('md')} {
+        grid-template-columns: 1fr;
+        gap: ${({theme}) => theme.spacing(8)};
+    };
 `;
 
 export const ItemLista = styled('li')`

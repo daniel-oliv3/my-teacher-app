@@ -10,7 +10,7 @@ const Lista = () => {
                         <Nome>Daniel Oliveira</Nome>
                         <Valor>R$ 100,00 por hora</Valor>
                         <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button>Marcar Aula</Button>
+                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
                     </Informacoes>
                 </ItemLista>
 
@@ -20,7 +20,7 @@ const Lista = () => {
                         <Nome>Daniel Oliveira</Nome>
                         <Valor>R$ 100,00 por hora</Valor>
                         <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button>Marcar Aula</Button>
+                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
                     </Informacoes>
                 </ItemLista>
 
@@ -30,7 +30,7 @@ const Lista = () => {
                         <Nome>Daniel Oliveira</Nome>
                         <Valor>R$ 100,00 por hora</Valor>
                         <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button>Marcar Aula</Button>
+                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
                     </Informacoes>
                 </ItemLista>
 
@@ -40,7 +40,7 @@ const Lista = () => {
                         <Nome>Daniel Oliveira</Nome>
                         <Valor>R$ 100,00 por hora</Valor>
                         <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button>Marcar Aula</Button>
+                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
                     </Informacoes>
                 </ItemLista>
             </ListaStyled>
