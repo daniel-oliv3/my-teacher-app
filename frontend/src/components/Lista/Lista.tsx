@@ -1,49 +1,34 @@
 import { Button } from "@mui/material";
-import {  ListaStyled, ItemLista, Foto, Informacoes, Nome, Valor, Descricao } from "./Lista.style";
+import { Professor } from "../../@types/professor";
+import {  ListaStyled, ItemLista, Foto, Informacoes, Nome, Valor, Descricao, ListaVazia } from "./Lista.style";
 
-const Lista = () => {
+
+interface ListaProps {
+    professores: Professor[],
+}
+
+const Lista = (props: ListaProps) => {
     return (
-            <ListaStyled >
-                <ItemLista>
-                    <Foto src="https://github.com/daniel-oliv3.png"></Foto>
-                    <Informacoes>
-                        <Nome>Daniel Oliveira</Nome>
-                        <Valor>R$ 100,00 por hora</Valor>
-                        <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
-                    </Informacoes>
-                </ItemLista>
-
-                <ItemLista>
-                    <Foto src="https://github.com/daniel-oliv3.png"></Foto>
-                    <Informacoes>
-                        <Nome>Daniel Oliveira</Nome>
-                        <Valor>R$ 100,00 por hora</Valor>
-                        <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
-                    </Informacoes>
-                </ItemLista>
-
-                <ItemLista>
-                    <Foto src="https://github.com/daniel-oliv3.png"></Foto>
-                    <Informacoes>
-                        <Nome>Daniel Oliveira</Nome>
-                        <Valor>R$ 100,00 por hora</Valor>
-                        <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
-                    </Informacoes>
-                </ItemLista>
-
-                <ItemLista>
-                    <Foto src="https://github.com/daniel-oliv3.png"></Foto>
-                    <Informacoes>
-                        <Nome>Daniel Oliveira</Nome>
-                        <Valor>R$ 100,00 por hora</Valor>
-                        <Descricao>Aulas de Skateboarding</Descricao>
-                        <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
-                    </Informacoes>
-                </ItemLista>
-            </ListaStyled>
+            <div>
+                {props.professores.length > 0 ? (
+                    <ListaStyled >
+                        {props.professores.map(professor => (
+                            // eslint-disable-next-line react/jsx-key
+                            <ItemLista>
+                                <Foto src={professor.foto}></Foto>
+                                <Informacoes>
+                                    <Nome>{professor.nome}</Nome>
+                                    <Valor>R${professor.valor_hora} por hora</Valor>
+                                    <Descricao>{professor.descricao}</Descricao>
+                                    <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
+                                </Informacoes>
+                            </ItemLista>
+                        ))}                                
+                    </ListaStyled>
+                ) : (
+                    <ListaVazia>Nenhum item encontrado!</ListaVazia>
+                )}
+            </div>
     )
 }
 
