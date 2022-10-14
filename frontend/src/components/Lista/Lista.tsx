@@ -12,13 +12,12 @@ const Lista = (props: ListaProps) => {
             <div>
                 {props.professores.length > 0 ? (
                     <ListaStyled >
-                        {props.professores.map(professor => (
-                            // eslint-disable-next-line react/jsx-key
-                            <ItemLista>
+                        {props.professores.map(professor => (                            
+                            <ItemLista key={professor.id}>
                                 <Foto src={professor.foto}></Foto>
                                 <Informacoes>
                                     <Nome>{professor.nome}</Nome>
-                                    <Valor>R${professor.valor_hora} por hora</Valor>
+                                    <Valor>{professor.valor_hora.toLocaleString('pt-BR', { minimumFractionDigits: 2, style: 'currency', currency: 'BRL' })} por hora</Valor>
                                     <Descricao>{professor.descricao}</Descricao>
                                     <Button sx={{ width: '70%' }}>Marcar Aula com Daniel</Button>
                                 </Informacoes>
