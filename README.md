@@ -242,7 +242,8 @@ npm i axios "@mui/material"
 ##
 
 - Instalar o python.
-- Verificar a versão instalada do python(Prompt de comando(console) globalmente).
+- Verificar a versão instalada do python(**Prompt de comando**(`console`) globalmente).
+- Powershell
 ```
 python -- version
 ```
