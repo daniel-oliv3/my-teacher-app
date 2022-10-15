@@ -317,7 +317,7 @@ python .\manage.py startapp app
 - Criar uma pasta `templates` dentro da pasta `app`
 - Criar uma pasta `app` dentro de `templates`
 - Criar o arquivo `home.html` dentro da pasta `app` (Dentro de templates). 
-    Seguindo o modelo.
+- Seguindo o modelo. 'app/templates/app/home.html'
 
 - views.py
 ```py
@@ -327,6 +327,14 @@ def home(request):
     return render(request, 'app/home.html')
 ```
 
+- urls.py (myteacher)
+```py
+from app.views import home
+
+urlpatterns = [
+    path('', home),
+]
+```
 
 - Criar e configurar a app `teacher`.
 - Criar o `model` de `Professor`.
