@@ -302,7 +302,8 @@ TIME_ZONE = 'America/Manaus'
 - Lista de fusos horários do banco de dados tz
 - https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-- App
+- Ex: App
+- settings.py
 ```py
 INSTALLED_APPS = [
     'app.apps.AppConfig'
@@ -312,6 +313,20 @@ INSTALLED_APPS = [
 ```
 python .\manage.py startapp app
 ```
+- views.py
+- Criar uma pasta `templates` dentro da pasta `app`
+- Criar uma pasta `app` dentro de `templates`
+- Criar o arquivo `home.html` dentro da pasta `app` (Dentro de templates). 
+    Seguindo o modelo.
+
+- views.py
+```py
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'app/home.html')
+```
+
 
 - Criar e configurar a app `teacher`.
 - Criar o `model` de `Professor`.
