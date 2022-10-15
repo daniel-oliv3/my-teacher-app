@@ -289,6 +289,37 @@ python manage.py runserver
 ```
 
 
+### Checklist do Desenvolvimento
+
+- Configurar idioma e timezone da aplicação.
+    - Alterar o arquivo `settings.py`
+    
+```py
+LANGUAGE_CODE = 'pt-br'
+
+TIME_ZONE = 'America/Manaus'
+```
+
+- Criar e configurar a app `teacher`.
+- Criar o `model` de `Professor`.
+- Criar o `serializer` de `Professor`.
+- Criar a `view` de `Professor`.
+- Configurar as `urls` do projeto.
+- Criar o `model` de `Aula`.
+- Criar o `serializer` de cadastro de `Aula`.
+- Criar a `view` de cadastro de `Aula`.
+- Criar a validação customizada no `serializer` de cadastro de `Aula`.
+- Configurar o CORS.
+
+
+
+
+
+
+
+
+
+
 
 
 
