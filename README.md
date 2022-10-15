@@ -293,11 +293,24 @@ python manage.py runserver
 
 - Configurar idioma e timezone da aplicação.
     - Alterar o arquivo `settings.py`
-    
+
 ```py
 LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Manaus'
+```
+- Lista de fusos horários do banco de dados tz
+- https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+- App
+```py
+INSTALLED_APPS = [
+    'app.apps.AppConfig'
+]
+```
+
+```
+python .\manage.py startapp app
 ```
 
 - Criar e configurar a app `teacher`.
