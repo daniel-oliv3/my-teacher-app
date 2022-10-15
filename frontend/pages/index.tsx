@@ -18,21 +18,21 @@ const Home: NextPage = () => {
       id: 2,
       nome: "Thiago Souza",
       foto: "https://github.com/daniel-oliv3.png",
-      descricao: "Descrição do professor 2",
+      descricao: "Professor de Capoeira",
       valor_hora: 200
     },
     {
       id: 3,
       nome: "Priscila Andrade",
       foto: "https://github.com/daniel-oliv3.png",
-      descricao: "Descrição do professor 3",
+      descricao: "Professora de Ingles",
       valor_hora: 300
     },
     {
       id: 4,
       nome: "Mara Rubia",
       foto: "https://github.com/daniel-oliv3.png",
-      descricao: "Descrição do professor 4",
+      descricao: "Professora de Portugues",
       valor_hora: 100
     }
   ]

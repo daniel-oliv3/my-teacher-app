@@ -267,10 +267,25 @@ python -m venv .venv
 .\.venv\Scripts\activate
 ```
 
+- Resolvendo erros. 
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
 
+**Instalar o Django**
+```
+pip install django
+```
 
+**Criar o projeto**
+```    
+django-admin startproject myteacher . 
+``` 
 
-
+**Iniciar o servidor**
+```    
+python manage.py runserver
+```
 
 
 
