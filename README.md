@@ -386,6 +386,17 @@ class Professor(models.Model):
     foto = models.URLField(max_length=255, null=False, blank=False)
 ```
 
+```
+python .\manage.py makemigrations
+```
+
+```
+python .\manage.py migrate
+```
+
+
+
+
 - Criar o `serializer` de `Professor`.
 - Criar a `view` de `Professor`.
 - Configurar as `urls` do projeto.
