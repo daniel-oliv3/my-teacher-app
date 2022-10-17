@@ -345,6 +345,21 @@ urlpatterns = [
 
 **Django REST framework**
 - Site: https://www.django-rest-framework.org/
+- Instalar a framework.
+- https://www.django-rest-framework.org/#installation
+
+```
+pip install djangorestframework
+```
+
+- Adicionar `rest_framework` em `INSTALLED_APP` no arquivo settings.py
+- settings.py
+```py
+INSTALLED_APPS = [
+    'rest_framework',
+]
+```
+
 
 - Criar e configurar a app `teacher`.
 - Criar o `model` de `Professor`.
