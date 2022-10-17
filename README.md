@@ -336,6 +336,10 @@ urlpatterns = [
 ]
 ```
 
+**Whimsical**
+- Site: https://whimsical.com/
+
+
 - Criar e configurar a app `teacher`.
 - Criar o `model` de `Professor`.
 - Criar o `serializer` de `Professor`.
@@ -346,6 +350,31 @@ urlpatterns = [
 - Criar a `view` de cadastro de `Aula`.
 - Criar a validação customizada no `serializer` de cadastro de `Aula`.
 - Configurar o CORS.
+
+## Problemas frequentes
+
+- Caso a virtualenv não esteja ativada no Windows, digite os seguintes comandos no terminal
+- Caso esteja utilizando o CMD:
+```        
+.venv\Scripts\activate`
+```        
+- Caso esteja utilizando o PowerShell
+```        
+.venv\Scripts\Activate.ps1`
+```
+        
+- Ao executar o comando `.venv\Scripts\Activate.ps1` no PoweShell exibe o erro de segurança como da imagem abaixo:
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33399956-48a4-46ae-8102-31a53a20ad75/Untitled.png)
+    
+    - Para resolver basta executar o comando `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`, porém vale ressaltar que essa solução só funciona para o terminal ao qual o comando foi executado, caso abra um novo terminal o erro irá acontecer novamente e será necessário executar novamente o comando.
+    - Para resolver de forma definitiva de maneira que não seja necessário executar o comando toda vez que abrir o terminal é necessário fechar o terminal aberto no momento e então abrir um novo PoweShell com privilégios de administrador, para isso basta clicar com o botão direito no ícone do PowerShell e então selecionar a opção “Executar como administrador”
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3651981f-4645-425c-95e3-3b08e58120de/Untitled.png)
+    
+    - Com o novo PowerShell aberto execute o comando `Set-ExecutionPolicy Unrestricted` e logo em seguida digite a letra “A” para aceitar. Feito isso pode fechar esse PowerShell e então abrir um novo PowerShell normalmente que o comando de ativação da virtualenv não dará mais problema.
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/df3d25f1-5ebd-49bc-990d-f4b16c74f90e/Untitled.png)
 
 
 
