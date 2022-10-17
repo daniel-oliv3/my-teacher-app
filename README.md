@@ -362,6 +362,17 @@ INSTALLED_APPS = [
 
 
 - Criar e configurar a app `teacher`.
+```
+python .\manage.py startapp teacher
+```
+
+- settings.py (myteacher)
+```py
+INSTALLED_APPS = [
+    'teacher.apps.TeacherConfig',
+]
+```
+
 - Criar o `model` de `Professor`.
 - Criar o `serializer` de `Professor`.
 - Criar a `view` de `Professor`.
