@@ -337,8 +337,14 @@ urlpatterns = [
 ```
 
 **Whimsical**
+- Para criação de Fluxogramas.
 - Site: https://whimsical.com/
 
+- http://127.0.0.1:5500/app/templates/app/home.html
+- Json: http://127.0.0.1:8000/
+
+**Django REST framework**
+- Site: https://www.django-rest-framework.org/
 
 - Criar e configurar a app `teacher`.
 - Criar o `model` de `Professor`.
@@ -351,7 +357,7 @@ urlpatterns = [
 - Criar a validação customizada no `serializer` de cadastro de `Aula`.
 - Configurar o CORS.
 
-## Problemas frequentes
+### Problemas frequentes
 
 - Caso a virtualenv não esteja ativada no Windows, digite os seguintes comandos no terminal
 - Caso esteja utilizando o CMD:
